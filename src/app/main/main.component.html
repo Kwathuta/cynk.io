@@ -2,20 +2,22 @@
     <header>
         <img src="../../assets/Tamuwa_H_White 1.svg" alt="Tamuwa" height="20px">
     </header>
-    <video src="../../assets/world.mp4" autoplay muted loop></video>
+    <video [autoplay]="true" [muted]="true" [loop]="true">
+        <source src="../../assets/world.mp4" type="video/mp4">
+    </video>
     <div class="overlay"></div>
     <div class="text">
         <h2>CYNK.io</h2>
         <h3>Powered by The Tamu Group</h3>
-        <p>CYNC is a transparent blockchain platform using HEDERA Hashgraph technology, bringing high quality verified
+        <p>CYNK is a transparent blockchain platform using HEDERA Hashgraph technology, bringing high quality verified
             carbon
             credits to market.</p>
-        <a href="#">Explore</a>
+        <!-- <a href="#">Explore</a> -->
     </div>
 
-    <ul class="social">
+    <!-- <ul class="social">
         <li>Facebook</li>
         <li>Twitter</li>
         <li>Instagram</li>
-    </ul>
+    </ul> -->
 </div>
