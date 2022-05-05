@@ -1,23 +1,38 @@
-<div class="video-wrapper">
+<section [ngClass]="{'video-wrapper':true, 'active':openMenu}">
     <header>
-        <img src="../../assets/Tamu_corporate_H_White.png" alt="Tamuwa" height="30px">
+        <img class="logo" src="../../assets/img/Tamu_corporate_H_White.png" alt="Tamuwa" height="30px">
+        <div [ngClass]="{'toggle':true, 'active':openMenu}" (click)="toggleMenu()"></div>
     </header>
     <video [autoplay]="true" [muted]="true" [loop]="true" playsinline>
         <source src="../../assets/world.mp4" type="video/mp4">
     </video>
     <div class="overlay"></div>
     <div class="text">
-        <img src="../../assets/cynk_logo.svg" alt="">
+        <img src="../../assets/img/cynk_logo.svg" alt="">
         <h3>Powered by Hedera</h3>
-        <p>cynk is a transparent blockchain platform using Hedera Hashgraph technology, bringing high quality verified
+        <p>cynk.io is a transparent blockchain platform using Hedera Hashgraph technology, bringing high quality
+            verified
             carbon
             credits to market.</p>
         <a href="#">Explore</a>
     </div>
 
-    <!-- <ul class="social">
-        <li>Facebook</li>
-        <li>Twitter</li>
-        <li>Instagram</li>
-    </ul> -->
+    <ul class="social">
+        <li><a href="https://www.linkedin.com/company/tamu-group/" target="_blank"><img
+                    src="../../assets/img/linkedin.svg" alt=""></a>
+        </li>
+        <li><a href="#"><img src="../../assets/img/facebook.svg" alt=""></a></li>
+        <li><a href="#"><img src="../../assets/img/twitter.svg" alt=""></a></li>
+        <li><a href="#"><img src="../../assets/img/youtube.svg" alt=""></a></li>
+    </ul>
+</section>
+
+<div class="menu">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
 </div>
