@@ -1,7 +1,8 @@
 <section [ngClass]="{'video-wrapper':true, 'active':openMenu}">
     <header>
-        <img class="logo" src="../../assets/img/Tamu_corporate_H_White.png" alt="Tamuwa" height="30px">
-        <div [ngClass]="{'toggle':true, 'active':openMenu}" (click)="toggleMenu()"></div>
+        <a href="https://www.tamu-group.com/" target="_blank"><img class="logo"
+                src="../../assets/img/Tamu_corporate_H_White.png" alt="Tamuwa" height="30px"></a>
+        <!-- <div [ngClass]="{'toggle':true, 'active':openMenu}" (click)="toggleMenu()"></div> -->
     </header>
     <video [autoplay]="true" [muted]="true" [loop]="true" playsinline>
         <source src="../../assets/world.mp4" type="video/mp4">
@@ -14,20 +15,20 @@
             verified
             carbon
             credits to market.</p>
-        <a href="#">Explore</a>
+        <!-- <a href="#">Explore</a> -->
     </div>
 
     <ul class="social">
         <li><a href="https://www.linkedin.com/company/tamu-group/" target="_blank"><img
                     src="../../assets/img/linkedin.svg" alt=""></a>
         </li>
-        <li><a href="#"><img src="../../assets/img/facebook.svg" alt=""></a></li>
+        <!-- <li><a href="#"><img src="../../assets/img/facebook.svg" alt=""></a></li>
         <li><a href="#"><img src="../../assets/img/twitter.svg" alt=""></a></li>
-        <li><a href="#"><img src="../../assets/img/youtube.svg" alt=""></a></li>
+        <li><a href="#"><img src="../../assets/img/youtube.svg" alt=""></a></li> -->
     </ul>
 </section>
 
-<div class="menu">
+<!-- <div class="menu">
     <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">News</a></li>
@@ -35,4 +36,4 @@
         <li><a href="#">Blog</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
-</div>
+</div> -->
